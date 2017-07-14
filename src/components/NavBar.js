@@ -1,32 +1,26 @@
 import React from 'react';
+import {Menu} from 'semantic-ui-react'
 
 const NavBar = (props) => {
 
-  if (this.props.images.length > 0){
+  if (props.images.length > 0){
     let pageNumbers = [];
-     for (let i = 1; i <= Math.ceil(this.props.images.length / this.props.imagesPerPage); i++) {
+     for (let i = 1; i <= Math.ceil(props.images.length / props.imagesPerPage); i++) {
        pageNumbers.push(i);
      }
      const renderPageNumbers = pageNumbers.map(number => {
        return (
-         <li
-           key={number}
-           id={number}
-           onClick={this.props.handleClick}
-         >
-           {number}
-         </li>
+         <Menu.Item name={number} id={number} onClick={props.handleClick} > {number} </Menu.Item>
      )})
      return (
-     <ul id="page-numbers">
-       {renderPageNumbers}
-     </ul> )
+       <div className='nav'>
+         <Menu fluid widths={10} inverted>
+           {renderPageNumbers}
+         </Menu>
+       </div>)
   }
-
   return (
-    <ul id="page-numbers">
-      <p>hi</p>
-    </ul>
+    <div></div>
   )
 
 }
