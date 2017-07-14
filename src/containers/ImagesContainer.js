@@ -41,7 +41,7 @@ class ImagesContainer extends Component {
 
    handleSearchClick(event){
      event.preventDefault()
-     console.log('hit button')
+
      ImagesAdapter.fetchImages(this.state.searchTerm)
      .then(images => this.setState({
        images: images.photos.photo }))
