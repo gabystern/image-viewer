@@ -1,7 +1,4 @@
-debugger
-
 export default {
-
-  KEY : `${process.env.KEY}`,
-  SECRET : `${process.env.SECRET}`,
+  KEY : `${process.env.REACT_APP_FLICKER_KEY}`,
+  SECRET : `${process.env.REACT_APP_FLICKER_SECRET}`,
 }
