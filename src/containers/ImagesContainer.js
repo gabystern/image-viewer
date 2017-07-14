@@ -90,7 +90,7 @@ class ImagesContainer extends Component {
       <div className="app">
         <Menu inverted borderless className='logo-menu'><Menu.Item position='left' name='Forbes' className='logo'></Menu.Item></Menu>
         < NavBar images={this.state.images} imagesPerPage={this.state.imagesPerPage} handleClick={(event) => this.handleClick(event)} />
-        <Header size='huge' textAlign='center' className='name'>Flickr Searchr</Header>
+        < Header size='huge' textAlign='center' className='name'>Flickr Searchr</Header>
         < SearchBar handleClick={this.handleSearchClick} handleChange={(event) => this.handleChange(event)} />
         < Modal images={this.state.images} isModalOpen={this.state.isModalOpen} selectedImage={this.state.selectedImage}/>
         < Grid container columns={5}>

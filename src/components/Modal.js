@@ -13,7 +13,6 @@ class Modal extends Component {
   render(){
     if (this.props.images.length > 0 && this.props.isModalOpen === true){
       let image = this.props.images[this.props.selectedImage]
-      console.log(image)
       let imageURL = `https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`
       return(
         <div className='overlay'>
