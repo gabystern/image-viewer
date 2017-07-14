@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
 import ImagesContainer from './containers/ImagesContainer'
-
 class App extends Component {
 
   render() {
