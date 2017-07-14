@@ -2,6 +2,8 @@ import keys from '../config.js'
 
 let key = keys.KEY
 let secret = keys.SECRET
+console.log(key)
+debugger
 
 export class ImagesAdapter {
   static fetchImages(searchTerm){
