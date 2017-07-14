@@ -73,3 +73,7 @@ input#search {
   color: #ffffff;
   font-size: 20px;
 }
+
+div.ui.container.five.column.grid {
+  margin: auto;
+}
