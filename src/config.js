@@ -1,5 +1,5 @@
 export default {
 
-  KEY : `${os.environ['KEY']}`,
-  SECRET : `${os.environ['SECRET']}`,
+  KEY : `${process.env.KEY}`,
+  SECRET : `${process.env.SECRET}`,
 }
